@@ -9,46 +9,57 @@ const DATA = {
     { id: "post", label: "Post-Independence", color: "#2E7D5B", years: "1946–Present" },
   ],
 
+  regions: [
+    { id: "all", label: "All Regions", color: "#8B7D5E" },
+    { id: "ilocano", label: "Ilocano", color: "#D4A853" },
+    { id: "visayan", label: "Visayan", color: "#E07B4C" },
+    { id: "tagalog", label: "Tagalog", color: "#6B9ECC" },
+    { id: "kapampangan", label: "Kapampangan", color: "#C97BA3" },
+    { id: "moro", label: "Moro / Mindanao", color: "#4DB386" },
+    { id: "cordillera", label: "Cordillera / Igorot", color: "#A3BE5C" },
+    { id: "chinese", label: "Chinese-Filipino", color: "#E05555" },
+  ],
+
   roots: [
-    { id: "r1", period: "pre", title: "Barangay System", desc: "Small, autonomous communities led by datus. Loyalty was hyper-local — to your kin group and chief, not to a nation. Alliances were personal, not institutional." },
-    { id: "r2", period: "pre", title: "Utang na Loob (Debt of Gratitude)", desc: "Pre-colonial reciprocal obligation system. When someone helps you, you owe them — not money, but loyalty and future favors. This predates Spain and is Austronesian in origin." },
-    { id: "r3", period: "pre", title: "Animist Spirituality", desc: "A world filled with spirits (anito/diwata) that demanded respect and ritual. Nature was alive and negotiations with invisible forces were part of daily life." },
-    { id: "r4", period: "spain", title: "Friar Control of Towns", desc: "Parish priests became de facto local government. They controlled education, records, morality, and even land disputes. The church bell, not a government office, organized Filipino life." },
-    { id: "r5", period: "spain", title: "Encomienda & Hacienda System", desc: "Spaniards were granted rights to Filipino labor and tribute. Later evolved into haciendas — massive landed estates. Created a landless peasant class that persists today." },
-    { id: "r6", period: "spain", title: "Racial Caste System (Indio/Mestizo)", desc: "Filipinos were classified as 'indios' — lowest caste. Social mobility required mixed blood or wealth. This embedded a hierarchy of skin color and foreign association into culture." },
-    { id: "r7", period: "spain", title: "Ilustrado Class Emergence", desc: "Wealthy Filipino-mestizo families sent sons to Europe. They returned with revolutionary ideas but also became the new elite. The pattern: reformers who reproduce the hierarchy they fought." },
-    { id: "r8", period: "spain", title: "Tobacco Monopoly (Ilocos)", desc: "Spain forced Ilocanos to grow tobacco exclusively, buying it at fixed low prices. Created extreme poverty but also forged Ilocano identity around endurance, thrift, and quiet resistance." },
-    { id: "r19", period: "spain", title: "Silang Revolt (1762–1763)", desc: "Diego Silang seized Vigan during the British occupation of Manila and declared 'Free Ilocos' — the first Ilocano bid for self-rule. He abolished tribute taxes and forced labor. Assassinated by a mestizo friend paid by the friars. His wife Gabriela continued the fight from Abra with Tinguian allies before being captured and hanged in Vigan's plaza. The revolt showed Ilocanos that liberation was possible — and that betrayal comes from within." },
-    { id: "r20", period: "spain", title: "Basi Revolt (1807)", desc: "After Spain banned private basi (sugarcane wine) production in 1786 — attacking an Ilocano cultural sacrament used in birth, marriage, and death rituals — Pedro Mateo and Saralogo Ambaristo led Piddig in revolt. Rebels swept through Sarrat, Laoag, Batac, marching toward Vigan. Crushed at the Gongogong river in San Ildefonso after 13 days. Leaders hanged in Plaza Salcedo, survivors exiled to Mindoro. Spain split Ilocos into Norte and Sur to prevent future unity." },
-    { id: "r9", period: "usa", title: "Benevolent Assimilation & Public Schools", desc: "Americans built a public school system — taught in English, with American textbooks and values. Created a generation that saw America as the model of progress and modernity." },
-    { id: "r10", period: "usa", title: "Pensionado Program", desc: "Filipino scholars sent to U.S. universities on government scholarships. They returned as technocrats who modeled American professional culture — the origin of the 'study abroad' aspiration." },
-    { id: "r11", period: "usa", title: "Philippine-American War Brutality", desc: "200,000–1,000,000 Filipino civilian deaths. Torture, concentration camps, scorched earth. Then deliberately erased from both countries' popular history. A foundational national amnesia." },
-    { id: "r12", period: "usa", title: "Commonwealth & Mock Independence", desc: "The U.S. created a Philippine Commonwealth with Filipino leaders — but retained ultimate control. Trained Filipinos to administer their own subjugation, normalizing performative sovereignty." },
-    { id: "r13", period: "japan", title: "WWII Occupation Trauma", desc: "Mass atrocities, Bataan Death March, Manila Massacre. Survival required deception, submission, or guerrilla resistance. Communities were forced to choose between collaboration and death." },
-    { id: "r14", period: "japan", title: "Guerrilla Resistance Networks", desc: "Filipinos built underground resistance movements — often family and barangay-based. This reinforced the pattern of trusting only your immediate circle in times of crisis." },
-    { id: "r15", period: "post", title: "Failed Land Reform", desc: "Every post-independence president promised land reform; none delivered fully. The hacienda class retained power. The landless remained landless. Institutional promises became meaningless." },
-    { id: "r16", period: "post", title: "Marcos Dictatorship & EDSA", desc: "14 years of martial law, cronyism, and plunder — followed by a People Power revolution that restored democracy but not economic justice. The cycle: hope, betrayal, resignation." },
-    { id: "r17", period: "post", title: "Labor Export Policy (OFW)", desc: "Government institutionalized overseas labor migration as economic strategy. Millions left families behind. Remittances became a national lifeline — and a substitute for domestic development." },
-    { id: "r18", period: "post", title: "Dynastic Politics", desc: "The ilustrado pattern reproduced: political families control provinces across generations. Elections become choices between dynasties, not ideologies." },
+    { id: "r1", period: "pre", region: "all", title: "Barangay System", desc: "Small, autonomous communities led by datus. Loyalty was hyper-local — to your kin group and chief, not to a nation. Alliances were personal, not institutional." },
+    { id: "r2", period: "pre", region: "all", title: "Utang na Loob (Debt of Gratitude)", desc: "Pre-colonial reciprocal obligation system. When someone helps you, you owe them — not money, but loyalty and future favors. This predates Spain and is Austronesian in origin." },
+    { id: "r3", period: "pre", region: "all", title: "Animist Spirituality", desc: "A world filled with spirits (anito/diwata) that demanded respect and ritual. Nature was alive and negotiations with invisible forces were part of daily life." },
+    { id: "r4", period: "spain", region: "all", title: "Friar Control of Towns", desc: "Parish priests became de facto local government. They controlled education, records, morality, and even land disputes. The church bell, not a government office, organized Filipino life." },
+    { id: "r5", period: "spain", region: "all", title: "Encomienda & Hacienda System", desc: "Spaniards were granted rights to Filipino labor and tribute. Later evolved into haciendas — massive landed estates. Created a landless peasant class that persists today." },
+    { id: "r6", period: "spain", region: "all", title: "Racial Caste System (Indio/Mestizo)", desc: "Filipinos were classified as 'indios' — lowest caste. Social mobility required mixed blood or wealth. This embedded a hierarchy of skin color and foreign association into culture." },
+    { id: "r7", period: "spain", region: "all", title: "Ilustrado Class Emergence", desc: "Wealthy Filipino-mestizo families sent sons to Europe. They returned with revolutionary ideas but also became the new elite. The pattern: reformers who reproduce the hierarchy they fought." },
+    { id: "r8", period: "spain", region: "ilocano", title: "Tobacco Monopoly (Ilocos)", desc: "Spain forced Ilocanos to grow tobacco exclusively, buying it at fixed low prices. Created extreme poverty but also forged Ilocano identity around endurance, thrift, and quiet resistance." },
+    { id: "r19", period: "spain", region: "ilocano", title: "Silang Revolt (1762–1763)", desc: "Diego Silang seized Vigan during the British occupation of Manila and declared 'Free Ilocos' — the first Ilocano bid for self-rule. He abolished tribute taxes and forced labor. Assassinated by a mestizo friend paid by the friars. His wife Gabriela continued the fight from Abra with Tinguian allies before being captured and hanged in Vigan's plaza. The revolt showed Ilocanos that liberation was possible — and that betrayal comes from within." },
+    { id: "r20", period: "spain", region: "ilocano", title: "Basi Revolt (1807)", desc: "After Spain banned private basi (sugarcane wine) production in 1786 — attacking an Ilocano cultural sacrament used in birth, marriage, and death rituals — Pedro Mateo and Saralogo Ambaristo led Piddig in revolt. Rebels swept through Sarrat, Laoag, Batac, marching toward Vigan. Crushed at the Gongogong river in San Ildefonso after 13 days. Leaders hanged in Plaza Salcedo, survivors exiled to Mindoro. Spain split Ilocos into Norte and Sur to prevent future unity." },
+    { id: "r9", period: "usa", region: "all", title: "Benevolent Assimilation & Public Schools", desc: "Americans built a public school system — taught in English, with American textbooks and values. Created a generation that saw America as the model of progress and modernity." },
+    { id: "r10", period: "usa", region: "all", title: "Pensionado Program", desc: "Filipino scholars sent to U.S. universities on government scholarships. They returned as technocrats who modeled American professional culture — the origin of the 'study abroad' aspiration." },
+    { id: "r11", period: "usa", region: "all", title: "Philippine-American War Brutality", desc: "200,000–1,000,000 Filipino civilian deaths. Torture, concentration camps, scorched earth. Then deliberately erased from both countries' popular history. A foundational national amnesia." },
+    { id: "r12", period: "usa", region: "all", title: "Commonwealth & Mock Independence", desc: "The U.S. created a Philippine Commonwealth with Filipino leaders — but retained ultimate control. Trained Filipinos to administer their own subjugation, normalizing performative sovereignty." },
+    { id: "r13", period: "japan", region: "all", title: "WWII Occupation Trauma", desc: "Mass atrocities, Bataan Death March, Manila Massacre. Survival required deception, submission, or guerrilla resistance. Communities were forced to choose between collaboration and death." },
+    { id: "r14", period: "japan", region: "all", title: "Guerrilla Resistance Networks", desc: "Filipinos built underground resistance movements — often family and barangay-based. This reinforced the pattern of trusting only your immediate circle in times of crisis." },
+    { id: "r15", period: "post", region: "all", title: "Failed Land Reform", desc: "Every post-independence president promised land reform; none delivered fully. The hacienda class retained power. The landless remained landless. Institutional promises became meaningless." },
+    { id: "r16", period: "post", region: "all", title: "Marcos Dictatorship & EDSA", desc: "14 years of martial law, cronyism, and plunder — followed by a People Power revolution that restored democracy but not economic justice. The cycle: hope, betrayal, resignation." },
+    { id: "r17", period: "post", region: "all", title: "Labor Export Policy (OFW)", desc: "Government institutionalized overseas labor migration as economic strategy. Millions left families behind. Remittances became a national lifeline — and a substitute for domestic development." },
+    { id: "r18", period: "post", region: "all", title: "Dynastic Politics", desc: "The ilustrado pattern reproduced: political families control provinces across generations. Elections become choices between dynasties, not ideologies." },
     // Regional roots
-    { id: "r21", period: "pre", title: "Visayan Pintados Warrior Culture", desc: "Pre-colonial Visayans were seafarers, raiders, and warriors whose full-body tattoos (batok) earned them the Spanish name 'Pintados' — the painted ones. Tattoos marked bravery and social rank. A maritime people with extensive Asian trade networks, skilled shipbuilders, and a culture that valued combat prowess, feasting, and oral epics." },
-    { id: "r22", period: "pre", title: "Moro Sultanates (Mindanao/Sulu)", desc: "Islam reached Sulu and Maguindanao before Spain arrived. The Sultanate of Sulu and Sultanate of Maguindanao were organized Islamic states with written law, international trade with Borneo and China, and a warrior tradition. They resisted Spain for 300+ years and were never fully conquered — the only region in the Philippines that maintained sovereignty throughout colonial rule." },
-    { id: "r23", period: "pre", title: "Cordillera Igorot Autonomy", desc: "The mountain peoples of the Cordillera — Bontoc, Ifugao, Kalinga, Kankanaey, Ibaloi, Tinguian — built the Banaue Rice Terraces over 2,000 years ago. They successfully resisted Spanish colonization for three centuries using mountainous terrain and fierce warrior traditions. They governed through indigenous law (bodong peace pacts) and were never Christianized during Spanish rule." },
-    { id: "r24", period: "spain", title: "Kapampangan Soldier-Collaborators", desc: "Spain recruited Kapampangan warriors as colonial soldiers — they fought against the Moros, suppressed Ilocano revolts (including the Silang Revolt), and served as the military backbone of Spanish control. This 'collaboration' gave Kapampangans access to land, privileges, and power — but also made them instruments of colonial violence against fellow Filipinos." },
-    { id: "r25", period: "spain", title: "Negros Sugar Hacienda Economy", desc: "Western Visayas, especially Negros Occidental, became the center of the Philippine sugar industry under Spain. Massive haciendas worked by sacadas (migrant sugar workers) created extreme wealth for a few families and grinding poverty for laborers. The sugar barons became a political dynasty class that persists today — Negros produced some of the Philippines' most powerful oligarchs." },
-    { id: "r26", period: "spain", title: "Moro Wars & Slave Raids (Visayas)", desc: "For centuries, Moro raiders from Sulu and Maguindanao attacked Visayan coastal towns, capturing thousands as slaves. Spain used these raids to justify military campaigns and to deepen Christian-Muslim animosity. Visayan communities built watchtowers (bantayan) and developed a siege mentality. The mutual violence created a Christian-Muslim divide that Spain exploited and that persists today." },
-    { id: "r27", period: "spain", title: "Cavite-Batangas Revolutionary Heartland", desc: "Southern Tagalog — Cavite, Batangas, Laguna — became the cradle of Philippine revolution. The Katipunan was founded in Cavite. Batangas endured some of the worst American war atrocities. These provinces developed a fierce revolutionary identity and a tradition of political dissent that other regions lacked." },
-    { id: "r28", period: "usa", title: "Mindanao Settler Colonialism", desc: "The American Homestead Act, then post-independence government policy under Roxas, Quirino, and Magsaysay, resettled waves of Christian Filipinos — Visayans, Ilocanos — into Mindanao. This deliberately changed demographics, displacing Moro and Lumad communities from their ancestral lands. By the 1970s, Christians outnumbered Muslims on their own island." },
-    { id: "r29", period: "post", title: "Typhoon Belt Identity (Eastern Visayas)", desc: "Samar and Leyte sit in the path of the Pacific typhoon belt. Yolanda/Hainan (2013) killed 6,000+ and destroyed Tacloban. But catastrophic storms have hit Eastern Visayas for centuries, creating a regional identity built around rebuilding, communal survival, and a dark humor about impermanence. Waray resilience is not metaphorical — it's annual." },
-    { id: "r30", period: "post", title: "Marcos Cordillera Dam Resistance", desc: "In the 1970s-80s, Marcos planned the Chico River Dam project that would have submerged Bontoc and Kalinga rice terraces and communities. Kalinga elder Macli-ing Dulag organized tribal resistance and was assassinated by the military in 1980. His death became a turning point — uniting Cordillera tribes into a collective Igorot political identity for the first time." },
-    { id: "r31", period: "post", title: "Bangsamoro Struggle for Self-Determination", desc: "The Jabidah Massacre (1968), Marcos martial law, and decades of marginalization fueled the MNLF and MILF armed struggles. After 120,000+ deaths and decades of conflict, the Bangsamoro Autonomous Region (BARMM) was established in 2019. The Moro conflict is the Philippines' longest-running insurgency — and a direct consequence of centuries of resistance being met with centuries of suppression." },
+    { id: "r21", period: "pre", region: "visayan", title: "Visayan Pintados Warrior Culture", desc: "Pre-colonial Visayans were seafarers, raiders, and warriors whose full-body tattoos (batok) earned them the Spanish name 'Pintados' — the painted ones. Tattoos marked bravery and social rank. A maritime people with extensive Asian trade networks, skilled shipbuilders, and a culture that valued combat prowess, feasting, and oral epics." },
+    { id: "r22", period: "pre", region: "moro", title: "Moro Sultanates (Mindanao/Sulu)", desc: "Islam reached Sulu and Maguindanao before Spain arrived. The Sultanate of Sulu and Sultanate of Maguindanao were organized Islamic states with written law, international trade with Borneo and China, and a warrior tradition. They resisted Spain for 300+ years and were never fully conquered — the only region in the Philippines that maintained sovereignty throughout colonial rule." },
+    { id: "r23", period: "pre", region: "cordillera", title: "Cordillera Igorot Autonomy", desc: "The mountain peoples of the Cordillera — Bontoc, Ifugao, Kalinga, Kankanaey, Ibaloi, Tinguian — built the Banaue Rice Terraces over 2,000 years ago. They successfully resisted Spanish colonization for three centuries using mountainous terrain and fierce warrior traditions. They governed through indigenous law (bodong peace pacts) and were never Christianized during Spanish rule." },
+    { id: "r24", period: "spain", region: "kapampangan", title: "Kapampangan Soldier-Collaborators", desc: "Spain recruited Kapampangan warriors as colonial soldiers — they fought against the Moros, suppressed Ilocano revolts (including the Silang Revolt), and served as the military backbone of Spanish control. This 'collaboration' gave Kapampangans access to land, privileges, and power — but also made them instruments of colonial violence against fellow Filipinos." },
+    { id: "r25", period: "spain", region: "visayan", title: "Negros Sugar Hacienda Economy", desc: "Western Visayas, especially Negros Occidental, became the center of the Philippine sugar industry under Spain. Massive haciendas worked by sacadas (migrant sugar workers) created extreme wealth for a few families and grinding poverty for laborers. The sugar barons became a political dynasty class that persists today — Negros produced some of the Philippines' most powerful oligarchs." },
+    { id: "r26", period: "spain", region: "visayan", title: "Moro Wars & Slave Raids (Visayas)", desc: "For centuries, Moro raiders from Sulu and Maguindanao attacked Visayan coastal towns, capturing thousands as slaves. Spain used these raids to justify military campaigns and to deepen Christian-Muslim animosity. Visayan communities built watchtowers (bantayan) and developed a siege mentality. The mutual violence created a Christian-Muslim divide that Spain exploited and that persists today." },
+    { id: "r27", period: "spain", region: "tagalog", title: "Cavite-Batangas Revolutionary Heartland", desc: "Southern Tagalog — Cavite, Batangas, Laguna — became the cradle of Philippine revolution. The Katipunan was founded in Cavite. Batangas endured some of the worst American war atrocities. These provinces developed a fierce revolutionary identity and a tradition of political dissent that other regions lacked." },
+    { id: "r28", period: "usa", region: "moro", title: "Mindanao Settler Colonialism", desc: "The American Homestead Act, then post-independence government policy under Roxas, Quirino, and Magsaysay, resettled waves of Christian Filipinos — Visayans, Ilocanos — into Mindanao. This deliberately changed demographics, displacing Moro and Lumad communities from their ancestral lands. By the 1970s, Christians outnumbered Muslims on their own island." },
+    { id: "r29", period: "post", region: "visayan", title: "Typhoon Belt Identity (Eastern Visayas)", desc: "Samar and Leyte sit in the path of the Pacific typhoon belt. Yolanda/Hainan (2013) killed 6,000+ and destroyed Tacloban. But catastrophic storms have hit Eastern Visayas for centuries, creating a regional identity built around rebuilding, communal survival, and a dark humor about impermanence. Waray resilience is not metaphorical — it's annual." },
+    { id: "r30", period: "post", region: "cordillera", title: "Marcos Cordillera Dam Resistance", desc: "In the 1970s-80s, Marcos planned the Chico River Dam project that would have submerged Bontoc and Kalinga rice terraces and communities. Kalinga elder Macli-ing Dulag organized tribal resistance and was assassinated by the military in 1980. His death became a turning point — uniting Cordillera tribes into a collective Igorot political identity for the first time." },
+    { id: "r31", period: "post", region: "moro", title: "Bangsamoro Struggle for Self-Determination", desc: "The Jabidah Massacre (1968), Marcos martial law, and decades of marginalization fueled the MNLF and MILF armed struggles. After 120,000+ deaths and decades of conflict, the Bangsamoro Autonomous Region (BARMM) was established in 2019. The Moro conflict is the Philippines' longest-running insurgency — and a direct consequence of centuries of resistance being met with centuries of suppression." },
     // Chinese influence
-    { id: "r32", period: "pre", title: "Pre-Colonial Chinese Trade (10th–16th c.)", desc: "Chinese traders from Fujian were trading with Philippine barangays centuries before Spain arrived. Archaeological finds of Song Dynasty ceramics (960–1279) prove deep commercial ties. Filipino envoys even traveled to China to request direct trade. This was a relationship of equals — not colonizer and colonized — based on porcelain, silk, beeswax, and gold." },
-    { id: "r33", period: "spain", title: "Sangley Merchants & the Parian", desc: "When Spain colonized Manila in 1571, Chinese (Hokkien) merchants were already there. The Spanish called them 'Sangley' (from Hokkien 'siong-lai' — one who comes frequently). Confined to the Parian ghetto near Intramuros, they became the colonial economy's backbone: artisans, retailers, builders, craftsmen. Spain needed them economically but feared their numbers — leading to periodic massacres (1603, 1639, 1662, 1686) that killed tens of thousands." },
-    { id: "r34", period: "spain", title: "Chinese Mestizo Class & Ilustrados", desc: "Chinese men married Filipino women, producing the 'mestizo de sangley' class. These Chinese mestizos — with access to both Chinese commercial networks and Spanish colonial privileges — became the educated, landowning elite. José Rizal, the national hero, was classified as mestizo de sangley. The ilustrado class that sparked the Philippine revolution was substantially Chinese-mestizo." },
-    { id: "r35", period: "spain", title: "Chinese Retail & the Sari-Sari Store Origin", desc: "Chinese traders pioneered small-scale retail in the Philippines — the tiendas that became the sari-sari store. They dominated neighborhood retail for centuries, with far larger inventories and higher efficiency than Filipino-owned stores. The 1959 Retail Trade Nationalization Act forced Chinese owners out, but Filipinos inherited the model — and many Chinese simply put stores under their Filipino wives' names." },
-    { id: "r36", period: "post", title: "Tsinoy Economic Dominance", desc: "Today, Chinese Filipinos (Tsinoy) — roughly 1.5% of the population — dominate the Philippine economy. Most of the country's richest families are of Chinese descent: the Sys, Tans, Gokongweis, Cojuangcos. They control retail (SM), banking (BDO/Metrobank), real estate, and food manufacturing. This concentration of wealth traces directly from Sangley commercial networks through Chinese mestizo capital accumulation to modern conglomerate empires." },
-    { id: "r37", period: "pre", title: "Chinese Cultural Absorption into Daily Life", desc: "Filipino daily life is saturated with Chinese influence most Filipinos don't recognize: pancit (Hokkien: 'pian-sit', ready-made food), siopao, lumpia, soy sauce, toyo. The word 'kuya' (older brother) comes from Hokkien. Beliefs in feng shui, lucky numbers, round fruits at New Year, tikoy — all Chinese. Even the suki (preferred customer) system has Chinese merchant roots. The absorption was so complete it became invisible." },
+    { id: "r32", period: "pre", region: "chinese", title: "Pre-Colonial Chinese Trade (10th–16th c.)", desc: "Chinese traders from Fujian were trading with Philippine barangays centuries before Spain arrived. Archaeological finds of Song Dynasty ceramics (960–1279) prove deep commercial ties. Filipino envoys even traveled to China to request direct trade. This was a relationship of equals — not colonizer and colonized — based on porcelain, silk, beeswax, and gold." },
+    { id: "r33", period: "spain", region: "chinese", title: "Sangley Merchants & the Parian", desc: "When Spain colonized Manila in 1571, Chinese (Hokkien) merchants were already there. The Spanish called them 'Sangley' (from Hokkien 'siong-lai' — one who comes frequently). Confined to the Parian ghetto near Intramuros, they became the colonial economy's backbone: artisans, retailers, builders, craftsmen. Spain needed them economically but feared their numbers — leading to periodic massacres (1603, 1639, 1662, 1686) that killed tens of thousands." },
+    { id: "r34", period: "spain", region: "chinese", title: "Chinese Mestizo Class & Ilustrados", desc: "Chinese men married Filipino women, producing the 'mestizo de sangley' class. These Chinese mestizos — with access to both Chinese commercial networks and Spanish colonial privileges — became the educated, landowning elite. José Rizal, the national hero, was classified as mestizo de sangley. The ilustrado class that sparked the Philippine revolution was substantially Chinese-mestizo." },
+    { id: "r35", period: "spain", region: "chinese", title: "Chinese Retail & the Sari-Sari Store Origin", desc: "Chinese traders pioneered small-scale retail in the Philippines — the tiendas that became the sari-sari store. They dominated neighborhood retail for centuries, with far larger inventories and higher efficiency than Filipino-owned stores. The 1959 Retail Trade Nationalization Act forced Chinese owners out, but Filipinos inherited the model — and many Chinese simply put stores under their Filipino wives' names." },
+    { id: "r36", period: "post", region: "chinese", title: "Tsinoy Economic Dominance", desc: "Today, Chinese Filipinos (Tsinoy) — roughly 1.5% of the population — dominate the Philippine economy. Most of the country's richest families are of Chinese descent: the Sys, Tans, Gokongweis, Cojuangcos. They control retail (SM), banking (BDO/Metrobank), real estate, and food manufacturing. This concentration of wealth traces directly from Sangley commercial networks through Chinese mestizo capital accumulation to modern conglomerate empires." },
+    { id: "r37", period: "pre", region: "chinese", title: "Chinese Cultural Absorption into Daily Life", desc: "Filipino daily life is saturated with Chinese influence most Filipinos don't recognize: pancit (Hokkien: 'pian-sit', ready-made food), siopao, lumpia, soy sauce, toyo. The word 'kuya' (older brother) comes from Hokkien. Beliefs in feng shui, lucky numbers, round fruits at New Year, tikoy — all Chinese. Even the suki (preferred customer) system has Chinese merchant roots. The absorption was so complete it became invisible." },
   ],
 
   behaviors: [
@@ -212,10 +223,14 @@ DATA.roots.forEach(r => { ROOT_MAP[r.id] = r; });
 const BEHAVIOR_MAP = {};
 DATA.behaviors.forEach(b => { BEHAVIOR_MAP[b.id] = b; });
 
+const REGION_MAP = {};
+DATA.regions.forEach(r => { REGION_MAP[r.id] = r; });
+
 export default function App() {
   const [selectedNode, setSelectedNode] = useState(null);
   const [selectedType, setSelectedType] = useState(null);
   const [activePeriods, setActivePeriods] = useState(new Set(DATA.periods.map(p => p.id)));
+  const [activeRegions, setActiveRegions] = useState(new Set(["all"]));
   const [hoveredConn, setHoveredConn] = useState(null);
   const [viewMode, setViewMode] = useState("network"); // "network" | "detail"
 
@@ -227,9 +242,34 @@ export default function App() {
     });
   };
 
+  const toggleRegion = (rid) => {
+    setActiveRegions(prev => {
+      if (rid === "all") {
+        // If "All Regions" is clicked, toggle between showing all and showing none
+        if (prev.has("all") && prev.size === 1) return new Set(DATA.regions.map(r => r.id));
+        return new Set(["all"]);
+      }
+      const next = new Set(prev);
+      // Remove "all" when picking specific regions
+      next.delete("all");
+      if (next.has(rid)) next.delete(rid); else next.add(rid);
+      // If nothing selected, go back to "all"
+      if (next.size === 0) return new Set(["all"]);
+      return next;
+    });
+  };
+
+  const regionPassesFilter = useCallback((rootRegion) => {
+    if (activeRegions.has("all")) return true;
+    if (activeRegions.has(rootRegion)) return true;
+    // "all" region roots always show when any filter is active
+    if (rootRegion === "all") return true;
+    return false;
+  }, [activeRegions]);
+
   const activeRoots = useMemo(() =>
-    DATA.roots.filter(r => activePeriods.has(r.period)),
-    [activePeriods]
+    DATA.roots.filter(r => activePeriods.has(r.period) && regionPassesFilter(r.region)),
+    [activePeriods, regionPassesFilter]
   );
 
   const activeConnections = useMemo(() => {
@@ -322,6 +362,27 @@ export default function App() {
               </button>
             ))}
           </div>
+          <span style={{ ...styles.legendLabel, marginTop: 8 }}>FILTER BY REGION</span>
+          <div style={styles.periodFilters}>
+            {DATA.regions.map(reg => {
+              const isActive = activeRegions.has(reg.id) || (reg.id === "all" && activeRegions.has("all"));
+              return (
+                <button
+                  key={reg.id}
+                  onClick={() => toggleRegion(reg.id)}
+                  style={{
+                    ...styles.periodBtn,
+                    borderColor: reg.color,
+                    background: isActive ? reg.color : "transparent",
+                    color: isActive ? "#fff" : reg.color,
+                    opacity: isActive ? 1 : 0.5,
+                  }}
+                >
+                  {reg.label}
+                </button>
+              );
+            })}
+          </div>
         </div>
       </div>
 
@@ -365,8 +426,23 @@ export default function App() {
                         {(isSelected || !selectedNode) && (
                           <div style={styles.cardDesc}>{root.desc}</div>
                         )}
-                        <div style={styles.connBadge}>
-                          {connCount} connection{connCount !== 1 ? "s" : ""}
+                        <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                          {root.region !== "all" && (
+                            <span style={{
+                              fontSize: 10,
+                              fontWeight: 600,
+                              letterSpacing: "0.05em",
+                              color: REGION_MAP[root.region]?.color || "#5a5245",
+                              background: `${REGION_MAP[root.region]?.color || "#5a5245"}18`,
+                              padding: "1px 6px",
+                              borderRadius: 3,
+                            }}>
+                              {REGION_MAP[root.region]?.label}
+                            </span>
+                          )}
+                          <span style={styles.connBadge}>
+                            {connCount} connection{connCount !== 1 ? "s" : ""}
+                          </span>
                         </div>
                       </div>
                     );
@@ -497,7 +573,7 @@ export default function App() {
       {/* Footer */}
       <div style={styles.footer}>
         <span style={{ opacity: 0.4 }}>Ugat — "root" in Filipino</span>
-        <span style={{ opacity: 0.3 }}>Click any card to explore · Filter eras above</span>
+        <span style={{ opacity: 0.3 }}>Click any card to explore · Filter by era or region above</span>
       </div>
     </div>
   );
